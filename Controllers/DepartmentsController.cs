@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using SalesWebMVC.Data;
 using SalesWebMVC.Models;
 
+using SalesWebMVC.Services;
+
 namespace SalesWebMVC.Controllers
 {
     public class DepartmentsController : Controller
@@ -149,5 +151,6 @@ namespace SalesWebMVC.Controllers
         {
             return _context.Department.Any(e => e.Id == id);
         }
+
     }
 }
